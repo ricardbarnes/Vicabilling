@@ -27,7 +27,7 @@ previament s'hagi especificat a la configuració. Logo de l'empresa, nom del cli
 ### Salvaguarda dels comptes
 
 Els comptes es poden desar i carregar, sempre que calgui. Són emmagatzemats en el format pròpi de l'aplicació
-(**.vbp*). Això permet de poder fer la feina en diferents sessions i, si donat el cas, de poder compartir comptes entre
+(*.vbp). Això permet de poder fer la feina en diferents sessions i, si donat el cas, de poder compartir comptes entre
 diferents sistemes.
 
 ### Interfície minimalista
