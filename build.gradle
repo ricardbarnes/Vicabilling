@@ -27,8 +27,8 @@ javafx {
 }
 
 application {
-    mainClassName = 'com.vonblum.vica_billing.app.Launcher'
-    applicationName = 'VicaBilling'
+    mainClassName = 'com.vonblum.vicabilling.app.Launcher'
+    applicationName = 'Vicabilling'
 }
 
 dependencies {
@@ -52,7 +52,7 @@ runtime {
         if (currentOs.windows) {
             installerType = 'msi'
             imageName = 'Vicabilling'
-            installerName = 'Vicabilling-installer'
+            installerName = 'Vicabilling'
             installerOptions += [
                     '--win-dir-chooser',
                     '--win-menu',
