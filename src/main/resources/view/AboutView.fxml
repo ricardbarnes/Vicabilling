@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1">
+    <Label layoutX="97.0" layoutY="43.0" text="%App_name">
+        <font>
+            <Font name="System bold" size="13.0" />
+        </font>
+    </Label>
+    <Label layoutX="99.0" layoutY="111.0" text="%Author" />
+    <Label layoutX="102.0" layoutY="95.0" text="%Copyright" />
+    <Label layoutX="184.0" layoutY="43.0" text="%Version">
+        <font>
+            <Font name="System bold" size="13.0" />
+        </font>
+    </Label>
+    <Label layoutX="67.0" layoutY="134.0" text="%Author_email" />
+</AnchorPane>

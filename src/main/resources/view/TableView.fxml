@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<fx:root fx:id="basePanel" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/11.0.1"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <Pane fx:id="tablePane" prefHeight="386.0" prefWidth="800.0" AnchorPane.leftAnchor="16.0"
+          AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+        <TableView fx:id="table" prefHeight="325.0" prefWidth="768.0"/>
+    </Pane>
+    <Pane fx:id="resultPane" layoutY="416.0" prefHeight="34.0" prefWidth="768.0" AnchorPane.bottomAnchor="16.0"
+          AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0">
+        <Label fx:id="totalVatLabel" layoutX="90.0" layoutY="12.0" text="%Total_untaxed"/>
+        <Label fx:id="totalNoVatLabel" layoutX="477.0" layoutY="12.0" text="%Total_taxed"/>
+        <TextField fx:id="totalNoVatField" layoutX="222.0" layoutY="7.0"/>
+        <TextField fx:id="totalVatField" layoutX="597.0" layoutY="7.0"/>
+    </Pane>
+</fx:root>

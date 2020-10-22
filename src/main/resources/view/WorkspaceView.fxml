@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.vonblum.vicabilling.app.controller.MenuController?>
+<?import com.vonblum.vicabilling.app.controller.ProductController?>
+<?import com.vonblum.vicabilling.app.controller.TableController?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane fx:id="basePanel" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.vonblum.vicabilling.app.controller.WorkspaceController">
+    <VBox prefWidth="800">
+        <MenuController fx:id="menuController"/>
+        <ProductController fx:id="productController"/>
+        <Separator fx:id="separator"/>
+        <TableController fx:id="tableController"/>
+    </VBox>
+</AnchorPane>

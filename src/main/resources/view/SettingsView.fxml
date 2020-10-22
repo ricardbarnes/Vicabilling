@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.vonblum.vicabilling.app.controller.BillSettingsController?>
+<?import com.vonblum.vicabilling.app.controller.CompanyController?>
+<?import com.vonblum.vicabilling.app.controller.CustomerController?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.vonblum.vicabilling.app.controller.SettingsController">
+    <TabPane prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="%Bill_settings">
+            <BillSettingsController fx:id="billSettingsController"/>
+        </Tab>
+        <Tab text="%Customer">
+            <CustomerController fx:id="customerController"/>
+        </Tab>
+        <Tab text="%Company">
+            <CompanyController fx:id="companyController"/>
+        </Tab>
+    </TabPane>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<fx:root fx:id="basePanel" prefHeight="320.0" prefWidth="800.0" type="javafx.scene.layout.AnchorPane"
+         xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <ComboBox fx:id="currencyBox" layoutX="325.0" layoutY="58.0" prefHeight="26.0" prefWidth="360.0"/>
+    <DatePicker fx:id="billDate" layoutX="44.0" layoutY="143.0"/>
+    <Label fx:id="dateLabel" layoutX="43.0" layoutY="119.0" text="%Bill_date">
+        <font>
+            <Font name="System bold" size="13.0"/>
+        </font>
+    </Label>
+    <Label fx:id="typeLabel" layoutX="42.0" layoutY="34.0" text="%Bill_type">
+        <font>
+            <Font name="System bold" size="13.0"/>
+        </font>
+    </Label>
+    <Label fx:id="numberLabel" layoutX="328.0" layoutY="118.0" text="%Bill_number">
+        <font>
+            <Font name="System bold" size="13.0"/>
+        </font>
+    </Label>
+    <Label fx:id="taxLabel" layoutX="586.0" layoutY="118.0" text="%VAT_percent">
+        <font>
+            <Font name="System bold" size="13.0"/>
+        </font>
+    </Label>
+    <RadioButton fx:id="receiptRadioBtn" layoutX="159.0" layoutY="62.0" mnemonicParsing="false" text="%Invoice"/>
+    <RadioButton fx:id="budgetRadioBtn" layoutX="42.0" layoutY="62.0" mnemonicParsing="false" text="%Budget"/>
+    <Spinner fx:id="numberSpinner" editable="true" layoutX="328.0" layoutY="142.0">
+        <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory initialValue="1" max="999999999" min="1"/>
+        </valueFactory>
+    </Spinner>
+    <Spinner fx:id="taxSpinner" editable="true" layoutX="586.0" layoutY="143.0">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory initialValue="0" max="9999999999.99" min="-9999999999.99"/>
+        </valueFactory>
+    </Spinner>
+    <Label fx:id="typeLabel1" layoutX="325.0" layoutY="34.0" text="%Currency">
+        <font>
+            <Font name="System bold" size="13.0"/>
+        </font>
+    </Label>
+    <Label fx:id="typeLabel2" layoutX="44.0" layoutY="196.0" text="%Terms_Cond">
+        <font>
+            <Font name="System bold" size="13.0"/>
+        </font>
+    </Label>
+    <TextArea fx:id="conditionsArea" layoutX="46.0" layoutY="222.0" prefHeight="70.0" prefWidth="711.0"/>
+</fx:root>

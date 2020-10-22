@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<fx:root fx:id="basePanel" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/11.0.1"
+         xmlns:fx="http://javafx.com/fxml/1">
+    <MenuBar fx:id="menuBar" layoutX="7.0" layoutY="8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+             AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Menu fx:id="fileMenu" mnemonicParsing="false" text="%File">
+            <MenuItem fx:id="itemOpen" mnemonicParsing="false" onAction="#onItemOpenAction" text="%Open"/>
+            <MenuItem fx:id="itemClose" mnemonicParsing="false" onAction="#onItemCloseAction" text="%Close"/>
+            <SeparatorMenuItem fx:id="firstFileSeparator" mnemonicParsing="false"/>
+            <MenuItem fx:id="itemSave" mnemonicParsing="false" onAction="#onItemSaveAction" text="%Save"/>
+        </Menu>
+        <Menu fx:id="editMenu" mnemonicParsing="false" text="%Edit">
+            <MenuItem fx:id="itemSettings" mnemonicParsing="false" onAction="#onItemSettingsAction" text="%Settings"/>
+        </Menu>
+        <Menu fx:id="menuBill" mnemonicParsing="false" text="%PDF">
+            <MenuItem fx:id="itemBuildPDF" mnemonicParsing="false" onAction="#onItemBuildPDFAction" text="%Build"/>
+            <!--            <SeparatorMenuItem fx:id="firstPDFSeparator" mnemonicParsing="false"/>-->
+            <!--            <MenuItem fx:id="itemOpenPDFFolder" mnemonicParsing="false" onAction="#onItemOpenPDFFolder" text="%Open_PDF_FOLDER"/>-->
+        </Menu>
+        <!--        <Menu mnemonicParsing="false" text="%Language">-->
+        <!--            <items>-->
+        <!--                <MenuItem mnemonicParsing="false" text="%English_US" onAction="#onEnglishUSAction"/>-->
+        <!--                <MenuItem mnemonicParsing="false" text="%Catalan" onAction="#onCatalanAction"/>-->
+        <!--            </items>-->
+        <!--        </Menu>-->
+        <Menu fx:id="tableMenu" mnemonicParsing="false" text="%Table">
+            <MenuItem fx:id="itemSelectAll" mnemonicParsing="false" onAction="#onItemSelectAllAction"
+                      text="%Select_all"/>
+            <SeparatorMenuItem fx:id="firstTableSeparator" mnemonicParsing="false"/>
+            <MenuItem fx:id="itemApplyPercentage" mnemonicParsing="false" onAction="#onItemApplyPercentageAction"
+                      text="%Apply_percentage"/>
+            <MenuItem fx:id="itemDeleteSelected" mnemonicParsing="false" onAction="#onItemDeleteSelectedAction"
+                      text="%Delete_selected"/>
+        </Menu>
+        <Menu fx:id="menuHelp" mnemonicParsing="false" text="%Help">
+            <MenuItem fx:id="itemAbout" mnemonicParsing="false" onAction="#onItemAboutAction" text="%About"/>
+        </Menu>
+    </MenuBar>
+</fx:root>

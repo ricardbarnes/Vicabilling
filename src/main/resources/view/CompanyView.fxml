@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<fx:root fx:id="basePanel" prefHeight="611.0" prefWidth="775.0" type="javafx.scene.layout.AnchorPane"
+         xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <Label fx:id="nameLabel" layoutX="22.0" layoutY="37.0" text="%Company_name"/>
+    <TextField fx:id="nameField" layoutX="139.0" layoutY="19.0" prefHeight="26.0" prefWidth="636.0"
+               AnchorPane.topAnchor="32.0"/>
+    <Label fx:id="websiteLabel" layoutX="23.0" layoutY="75.0" text="%Website"/>
+    <TextField fx:id="websiteField" layoutX="139.0" layoutY="70.0" prefHeight="26.0" prefWidth="636.0"/>
+    <Label fx:id="emailLabel" layoutX="23.0" layoutY="114.0" text="%Email"/>
+    <TextField fx:id="emailField" layoutX="139.0" layoutY="109.0" prefHeight="26.0" prefWidth="636.0"/>
+    <Label fx:id="phoneLabel" layoutX="23.0" layoutY="153.0" text="%Phone"/>
+    <TextField fx:id="phoneField" layoutX="139.0" layoutY="148.0" prefHeight="26.0" prefWidth="250.0"/>
+    <Label fx:id="addressLabel" layoutX="23.0" layoutY="186.0" text="%Address"/>
+    <TextArea fx:id="addressArea" layoutX="139.0" layoutY="186.0" prefHeight="70.0" prefWidth="636.0"/>
+    <Label fx:id="footerLabel" layoutX="23.0" layoutY="271.0" text="%Footer"/>
+    <TextArea fx:id="footerArea" layoutX="139.0" layoutY="271.0" prefHeight="120.0" prefWidth="636.0"/>
+    <ImageView fx:id="logoImage" fitHeight="120.0" fitWidth="120.0" layoutX="328.0" layoutY="420.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <Button fx:id="logoButton" layoutX="304.0" layoutY="560.0" mnemonicParsing="false" onAction="#onChangeLogoAction"
+            prefHeight="26.0" prefWidth="167.0" text="%Change_logo" AnchorPane.bottomAnchor="25.0"/>
+</fx:root>
